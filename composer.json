@@ -1,0 +1,31 @@
+{
+    "name": "bloomcu/laravel-categories",
+    "description": "An Eloquent categories package for Laravel",
+    "authors": [
+        {
+            "name": "Ryan Harmon",
+            "email": "ryan@bloomcu.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BloomCU\\Categories\\": "src"
+        }
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/database": ">= 8.0",
+        "illuminate/support": ">= 8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.22",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php",
+            "tests/stubs/LessonStub.php",
+            "tests/stubs/CategoryStub.php"
+        ]
+    }
+}
