@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Builder;
 
 class Category extends Model
 {
+    protected $guarded = ['id'];
+
     public static function booted()
     {
         static::creating(function (Category $category) {
